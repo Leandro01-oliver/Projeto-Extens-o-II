@@ -21,6 +21,7 @@ let NavBar = document.querySelector(".container-navbar"),
     boxFilter  = document.querySelector(".box-filter"),
     textSadBtn  = document.querySelectorAll(".text-sad-btn"),
     SadLink  = document.querySelectorAll(".sad-link"),
+    boxFundo = document.querySelectorAll(".box-fundo"),
     iconArrow  = document.querySelector(".icon-arrow");
     
     
@@ -53,11 +54,16 @@ boxDarkMode.onclick = () => {
     navLink.forEach(n => n.classList.toggle("active-darkmode"));
     boxFilter.classList.toggle("active-darkmode");
     SadLink.forEach(n => n.classList.toggle("active-darkmode"));
+    boxFundo.forEach(n => n.classList.toggle("active-darkmode"));
+    
 }
 
 boxMenu.onclick = () => {
     dropMenu.classList.toggle("active-drop-menu");
     
+}
+SadBar.onclick = () => {
+    dropMenu.classList.remove("active-drop-menu");
 }
 
 boxFilter.onclick = () => {
