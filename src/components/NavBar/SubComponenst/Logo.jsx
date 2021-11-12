@@ -4,7 +4,7 @@ import ImageLogo from "../../../../public/assets/images/logo.jpg"
 function Logo(){
 return (
     <>
-<section className="box-logo">
+<section className="box-logo mx-2">
     <Image
     src= {ImageLogo}
     height="40px"
