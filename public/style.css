@@ -7,6 +7,9 @@
     list-style: none;
 }
 
+.pointer{
+    cursor: pointer;
+}
 
 .navbar{
  background-color: transparent;
@@ -37,13 +40,14 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 4%;
+    padding: 60px  4% 0 4%;
+    flex-direction: column;
 }
 
 .box-search{
     width: 100%;
     border:2px solid #fff;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 40px;
     position: relative;
 }
@@ -61,13 +65,11 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
     background-color: #fff;
     cursor: pointer;
 }
-.icon-search{
 
-}
 .search{
     outline: none;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 40px;
     border: none;
     height: 40px;
@@ -88,8 +90,12 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
    border-radius: 40px;
    font-weight: bold;
 }
+.dropdown-menu{
+    border:2px solid #fff;
+    background-color: transparent;
+}
 .dropdown-menu[data-bs-popper]{
-    left: -4rem!important;
+    left: -2rem!important;
     top: 3.5rem !important;
 }
 
@@ -114,9 +120,149 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 .navbar-toggler:focus{
   box-shadow: none;
 }
+.box-result{
+    background-color: #333333;
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #fff; 
+    border-radius: 15px;
+    margin-top: 1rem;
+padding: 15px;
+}
+.box-text-result{
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+    padding: 20px 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.box-text-result:hover{
+    background-color: transparent;
+    color: #fff;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+.box-text-result .text-result{
+    background-color: red;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 40px;
 
+}
+.text-result:nth-child(1){
+    display: none;
+}
+.text-result span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.box-site-result{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.box-site-result:hover{
+background-color: transparent;
+color: #fff;
+box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
 
+.box-site-result li{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1rem 0;
+    cursor: text;
+}
+.box-porcentagem-result{
+    border-radius: 10px;
+  width: 100%;
+    cursor: pointer;
+    padding: 20px 0;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+}
+
+.box-porcentagem-result:hover{
+    background-color: transparent;
+    color: #fff;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+.box-porcentagem-result span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.circlo-porcem{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-pesquise-search{
+   background-color: #333333;
+   width: 100%;
+   max-width: 900px;
+   border: 2px solid #fff; 
+   padding: 20px 10px ;
+   border-radius: 15px;
+   margin-top: 1rem;
+   /* display: none; */
+} 
+
+.search:hover .box-pesquise-search{
+    display: flex;
+}
+ .box-result-search{
+    cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 0;
+  transition: .5s ease-in-out;
+}
+.box-result-search:hover{
+    background-color: transparent;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.box-result-search span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn{
+    border-radius: 0;
+    padding: .3rem 0;
+    margin: 0;
+    color: #fff;
+}
+
+.btn:hover{
+background-color: #ccc;
+}
+.true-ckeck{
+    cursor: text;
+}
+.false-ckeck{
+    cursor: text;
+}
+.text-porcentagem{
+    cursor: text;
+}
 @media screen and  (max-width: 992px){
+
 
     .nav-link{
         margin:.5rem 0;
@@ -125,17 +271,23 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 .dropdown-menu {
 width: 100%!important;
 position: unset!important;
+border-radius: 10px;
 }
 
 .navbar-collapse{
     padding: 20px 0;
  opacity: 0;
  transition: .5s ease-in-out;
+ width: 100%;
+ background-color: #000;
+ margin-top: .36rem;
+ border-radius: 10px;
+ border: 2px solid #fff;
+
 }
 
 .navbar-collapse.show{
  opacity: 1;
- border-bottom: 2px solid #fff;
 }
 
 }
