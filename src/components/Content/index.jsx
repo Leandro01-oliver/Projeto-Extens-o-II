@@ -1,11 +1,11 @@
+import ImageCenter from "../Content/SubComponents/ImageCenter";
  import BoxSearch from "../Content/SubComponents/Search"
- import ResulSearch from "../Content/SubComponents/ResultSerach"
-function Content(){
+ function Content(){
     return(
         <>
     <section className="container-content">
+<ImageCenter/>
   <BoxSearch/>
-  <ResulSearch/>
 </section>
         </>
     )
