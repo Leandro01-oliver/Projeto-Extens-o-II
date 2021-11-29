@@ -54,6 +54,9 @@ const closePorcen = ()=>{
      </InputRightElement>
    </InputGroup>
 
+ <Box 
+ display={openResult ? 'flex' : 'none'}
+ >
    <Flex
    id="box-porcen"
    border="2px solid #fff"
@@ -80,7 +83,7 @@ const closePorcen = ()=>{
      justify="center"
      onClick={closePorcen}
      cursor="pointer"
-     color="fff"
+     color="#fff"
      transition=".5s ease-in-out"
      _hover={{
       border:"2px solid transparent",
@@ -138,6 +141,7 @@ const closePorcen = ()=>{
      <Text>
        Notícia 1
      </Text>
+     </Box>
     </Box>
    </Box>
     </>
