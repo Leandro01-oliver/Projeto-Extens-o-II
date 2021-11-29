@@ -12,6 +12,7 @@ function SignIn(){
         border="2px solid #fff"
         borderRadius="40px"
         bg="#000"
+        color="#fff"
         _hover={{
             border:"2px solid red!important",
             color:"red"
