@@ -54,8 +54,11 @@ const closePorcen = ()=>{
      </InputRightElement>
    </InputGroup>
 
- <Box 
+ <Flex 
  display={openResult ? 'flex' : 'none'}
+ w="100%"
+ direction="column"
+ maxW="880px"
  >
    <Flex
    id="box-porcen"
@@ -141,9 +144,9 @@ const closePorcen = ()=>{
      <Text>
        Notícia 1
      </Text>
-     </Box>
     </Box>
    </Box>
+   </Flex>
     </>
   );
 }
