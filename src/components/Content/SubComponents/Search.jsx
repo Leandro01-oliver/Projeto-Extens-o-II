@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {Input,InputGroup,InputRightElement,Box,Text,Flex} from "@chakra-ui/react"
 import {useState} from "react"
+
 function Search() {
 
 const [openResult,setOpenResult] = useState(false);
@@ -14,6 +15,7 @@ const closePorcen = ()=>{
 
   boxPorcen.classList.toggle("active-close-porcen");
 }
+
   return (
     <>
    <InputGroup

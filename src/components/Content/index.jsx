@@ -4,18 +4,20 @@ import {Flex} from "@chakra-ui/react"
 
  function Content(){
 
-  const closeMenu = ()=>{
+  const closeMenu = () => {
+
     let boxMobileLogin = document.querySelector("#box-mobile-login");
    
     boxMobileLogin.classList.remove("active-menu");
    
    }
+   
     return(
         <>
   <Flex
   w="100%"
   className="container-content"
-  onclick={closeMenu}
+  onClick={closeMenu}
   h="100vh"
   align="center"
   justify="center"

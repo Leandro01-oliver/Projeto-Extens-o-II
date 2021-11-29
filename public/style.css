@@ -15,10 +15,17 @@
    #img-logo{
        background-image: url("../public/assets/images/logo.jpeg");
    }
+
+
 @media screen and (max-width:768px) {
 
     #box-login{
         display: none
+    }
+
+    #box-mobile-login{
+        opacity:1;
+        animation: animationMenu 1s ease-in-out
     }
 
     #box-mobile-login.active-menu{
@@ -26,6 +33,17 @@
         width: 100%;
         left: 0;
         border-bottom: 2px solid #fff;
+    }
+
+    @keyframes animationMenu {
+        0%{
+         top:-1rem;
+         opacity: 0
+        }
+        100%{
+        top:70px;
+         opacity: .25;
+        }
     }
     #btn-login{
         width: 100%;
