@@ -1,42 +1,72 @@
 import Logo from "../NavBar/SubComponenst/Logo"
-import Link from "next/link"
+import SignIn from "./SubComponenst/SignIn";
+import {Flex,Box} from "@chakra-ui/react"
+
 
 function NavBar(){
-  function NavScrool(){
-    window.addEventListener('scroll', () =>{
+ 
+const activeMenu = ()=>{
+ let boxMobileLogin = document.querySelector("#box-mobile-login");
 
-      var scroll = this.scrollY;
-  
-      console.log(scroll)
- 
-       })
-  }
- 
+ boxMobileLogin.classList.toggle("active-menu");
+
+}
+
  return(
-     <>
-    <nav className="container-navbar navbar navbar-expand-lg navbar-light " onScroll={NavScrool}>
-  <div className="container-fluid p-0 mx-2">
-  <Logo/>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i className="fas fa-bars"></i>
-    </button>
-    <div className="collapse navbar-collapse px-" id="navbarSupportedContent">
-      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-      </ul>
-      <li className="nav-item dropdown mx-2">
-        
-          <span className="nav-link dropdown-toggle btn-sign d-flex align-items-center justify-content-between "  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i className="fas fa-sign-in-alt mx-2"></i> Sign In
-          </span>
+    <>
+  <Flex
+   w="100%"
+   h="70px"
+   position="fixed"
+   zIndex="1000"
+   justify="space-between"
+   align="center"
+   borderBottom="2px solid #fff"
+  >
+    <Logo/>
+    <Box 
+        mr={{sm:"0",md:"1rem",lg:"1rem",xl:"1rem"}}
+        id="box-login"
+    >
+    <SignIn/>
+    </Box>
 
-          <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
-            <Link href="#"><div className="d-flex align-items-center pointer btn"><i className="fab fa-facebook mx-2"></i><span className="text-btn" href="#">Faceboock</span></div></Link>
-            <Link href="#"><div className="d-flex align-items-center pointer btn"><i className="fab fa-google-plus  mx-2"></i><span className="text-btn" href="#">Google</span></div></Link>
-          </ul>
-        </li>
-    </div>
-  </div>
-</nav>
+ <Box
+ display={{sm:"flex",md:"none",lg:"none"}}
+ >
+    <Flex
+    w="45px"
+    h="45px"
+    mr="1rem"
+    cursor="pointer"
+    justify="center"
+    align="center"
+    transition=".5s ease-in-out"
+    borderRadius="50%"
+    border="2px solid #fff"
+    onClick={activeMenu}
+    _hover={{
+      border:"2px solid transparent",
+      boxShadow:"0 0 5px 0 red"
+    }}
+    >
+      <i className="fas fa-bars"> </i>
+    </Flex>
+    <Flex
+    id="box-mobile-login"
+    p="20px"
+    position="absolute"
+    top="75px"
+    right="1rem"
+    display="none"
+    borderBottom="2px solid #fff"
+    >
+    <SignIn/>
+    </Flex>
+    </Box>
+
+  </Flex>
+
      </>
  )
 }

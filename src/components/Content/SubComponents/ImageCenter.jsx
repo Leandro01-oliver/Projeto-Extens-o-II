@@ -1,16 +1,21 @@
-import Image from "next/image"
-import ImageCenter from "../../../../public/assets/images/cor.png"
+import {Box} from "@chakra-ui/react"
 function ImageC(){
 
     return(
         <>
-  <section className="box-img-center text-center my-3">
-      <Image
-      src={ImageCenter}
-      height="100px"
-      width="100px"
-      />
-  </section>
+  <Box
+  ml="1rem"
+  cursor="pointer"
+  >
+      <Box
+      id="img-logo"
+      h="150px"
+      w="150px"
+      bgSize="100% 100%"
+      borderRadius="50%"
+      >
+      </Box>
+  </Box>
         </>
     )
 }

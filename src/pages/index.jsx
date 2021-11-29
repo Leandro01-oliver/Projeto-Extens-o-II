@@ -6,7 +6,7 @@ import Content from "../components/Content/index";
    
   return (
    <>
-<NavBar/>
+  <NavBar/>
   <Content/>
    </>
   )
