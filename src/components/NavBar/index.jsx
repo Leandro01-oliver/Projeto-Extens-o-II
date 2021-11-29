@@ -43,6 +43,7 @@ const activeMenu = ()=>{
     align="center"
     transition=".5s ease-in-out"
     borderRadius="50%"
+    color="#fff"
     border="2px solid #fff"
     onClick={activeMenu}
     _hover={{
