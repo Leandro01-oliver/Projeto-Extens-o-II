@@ -80,6 +80,7 @@ const closePorcen = ()=>{
      justify="center"
      onClick={closePorcen}
      cursor="pointer"
+     color="fff"
      transition=".5s ease-in-out"
      _hover={{
       border:"2px solid transparent",
@@ -126,6 +127,7 @@ const closePorcen = ()=>{
     border="2px solid #fff"
     cursor="pointer"
     borderRadius="10px"
+    color="#fff"
     transition=".5s ease-in-out"
     _hover={{
       boxShadow:"0 0 5px 0 red",
