@@ -44,6 +44,7 @@ const closePorcen = ()=>{
      mt=".6rem"
      mr="1rem"
      cursor="pointer"
+     color="#fff"
      transition=".5s ease-in-out"
      _hover={{
        boxShadow:"0 0 5px 0 red",
