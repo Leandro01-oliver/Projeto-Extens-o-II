@@ -24,7 +24,7 @@ import {Flex} from "@chakra-ui/react"
   bgPosition="center"
   direction="column"
   bgRepeat="no-repeat"
-  bgSize="101% 102%"
+  bgSize="105% 105%"
   p="250px 4%"
   filter="drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25))"
   >
