@@ -48,7 +48,8 @@ const activeMenu = ()=>{
     onClick={activeMenu}
     _hover={{
       border:"2px solid transparent",
-      boxShadow:"0 0 5px 0 red"
+      boxShadow:"0 0 5px 0 red",
+      color:"red"
     }}
     >
       <i className="fas fa-bars"> </i>
