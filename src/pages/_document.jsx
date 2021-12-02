@@ -11,12 +11,13 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href="../../public/assets/icons/logo.ico"/>
+          <link rel="shortcut icon" href="logo.jpeg"/>
           <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
           crossorigin="anonymous"/>
+          <title>Get Fake News</title>
         </Head>
         <body>
           <Main />

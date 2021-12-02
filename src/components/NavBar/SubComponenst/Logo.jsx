@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ImageLogo from "../../../../public/assets/images/cor.png"
+import ImageLogo from "../../../../public/cor.png"
 import {Flex} from "@chakra-ui/react"
 
 function Logo(){
